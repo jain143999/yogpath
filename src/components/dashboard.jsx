@@ -73,7 +73,32 @@ const Dashboard = () => {
         <Card title="New Clients" amount="70" icon={PersonAddAltIcon} />
       </div>
 
-      <div id="container" className="chart"></div>
+      <div style={{ display: "flex", gap: "20px" }}>
+        <span id="container" className="chart"></span>
+        <div className="referral-container">
+          <p>
+            <strong>Referral Tracking</strong>
+          </p>
+          <div style={{ display: "flex", gap: "40px", flexWrap: "wrap" }}>
+            <div className="referalClip">
+              <span style={{ fontSize: "16px" }}>Invited</span>
+              <span style={{ fontSize: "14px" }}>110</span>
+            </div>
+            <div className="referalClip">
+              <span style={{ fontSize: "16px" }}>Bonous</span>
+              <span style={{ fontSize: "14px" }}>1110</span>
+            </div>
+            <div className="referalClip">
+              <span style={{ fontSize: "16px" }}>Successfull</span>
+              <span style={{ fontSize: "14px" }}>50</span>
+            </div>
+            <div className="referalClip">
+              <span style={{ fontSize: "16px" }}>Pending</span>
+              <span style={{ fontSize: "14px" }}>60</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -10,6 +10,7 @@ const Card = ({ title, amount, icon: Icon }) => {
         padding: "20px",
         borderRadius: "10px",
         color: "white",
+        backgroundColor: "rgb(11, 8, 47)",
       }}
       className="card"
     >
