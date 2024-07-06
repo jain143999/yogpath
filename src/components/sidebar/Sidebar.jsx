@@ -32,8 +32,8 @@ const openedMixin = (theme) => ({
   }),
   overflowX: "hidden",
   backgroundColor: "rgb(11, 8, 47)",
-  color: "#fff", // Update text color if needed
-  height: "100%", // Ensure the drawer spans the full height
+  color: "#fff",
+  height: "100%",
 });
 
 const closedMixin = (theme) => ({
@@ -47,8 +47,8 @@ const closedMixin = (theme) => ({
     width: `calc(${theme.spacing(8)} + 1px)`,
   },
   backgroundColor: "rgb(11, 8, 47)",
-  color: "#fff", // Update text color if needed
-  height: "100%", // Ensure the drawer spans the full height
+  color: "#fff",
+  height: "100%",
 });
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -67,8 +67,8 @@ const AppBar = styled(MuiAppBar, {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  backgroundColor: "rgb(11, 8, 47)", // Change toolbar color
-  color: "#fff", // Update text color if needed
+  backgroundColor: "rgb(11, 8, 47)",
+  color: "#fff",
   ...(open && {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
@@ -175,7 +175,7 @@ export default function Sidebar() {
                     minWidth: 0,
                     mr: open ? 3 : "auto",
                     justifyContent: "center",
-                    color: "#fff", // Change icon color to white
+                    color: "#fff",
                   }}
                 >
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
