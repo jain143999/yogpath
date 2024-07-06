@@ -5,7 +5,7 @@ import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
-import Card from "../components/card/Card"; // Adjust the import path according to your project structure
+import Card from "../components/card/Card";
 
 const Dashboard = () => {
   useEffect(() => {
@@ -55,7 +55,7 @@ const Dashboard = () => {
       .catch((error) => {
         console.error("Error fetching chart data:", error);
       });
-  }, []); // Empty dependency array means this effect runs once when the component mounts
+  }, []);
 
   return (
     <div className="dashboarMain">
